@@ -1,0 +1,166 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MatchMatch" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWrap" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MainLinearLayout" parent="MatchWrap">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="HorLinearLayout" parent="MatchWrap">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+    </style>
+
+    <style name="TitleTV" parent="MatchWrap">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:paddingBottom">@dimen/big_padding</item>
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="DateRatingLinearLayout" parent="WrapWrap">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+    </style>
+
+    <style name="DateRatingTVCommons" parent="WrapWrap">
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:paddingLeft">@dimen/small_padding</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="DateTV" parent="DateRatingTVCommons">
+        <item name="android:textSize">@dimen/date_text_size</item>
+    </style>
+
+    <style name="RatingTV" parent="DateRatingTVCommons">
+        <item name="android:textSize">@dimen/rating_synopsis_text_size</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/user_rating</item>
+    </style>
+
+    <style name="SynopsisTV" parent="WrapWrap">
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:textSize">@dimen/rating_synopsis_text_size</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="PosterImageView" parent="AppTheme">
+        <item name="android:layout_width">@dimen/poster_width</item>
+        <item name="android:layout_height">@dimen/poster_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="GridView" parent="MatchMatch">
+        <item name="android:numColumns">2</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NoInternetTV" parent="WrapWrap">
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:layout_marginTop">@dimen/big_padding</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Toggle" parent="WrapWrap">
+        <item name="android:layout_marginTop">@dimen/padding</item>
+        <item name="android:background">@drawable/ic_toggle</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+    <style name="VideosReviewsLabels" parent="WrapWrap">
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:textSize">@dimen/video_reviews_label_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Views" parent="AppTheme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+    </style>
+
+    <style name="View" parent="Views">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="ViewReviews" parent="Views">
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="ReviewsListView" parent="MatchWrap">
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+    </style>
+
+    <style name="ReviewAuthor" parent="WrapWrap">
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ReviewContent" parent="MatchWrap">
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+    </style>
+
+    <style name="PlayIcon" parent="AppTheme">
+        <item name="android:layout_width">@dimen/play_icon_measures</item>
+        <item name="android:layout_height">@dimen/play_icon_measures</item>
+    </style>
+
+    <style name="VideosMainLinearLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/play_icon_measures</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="VideosHorLinearLayout" parent="MatchWrap">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="VideoTitle" parent="WrapWrap">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+
+</resources>

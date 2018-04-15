@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Popular Movies 1</string>
+
+    <!-- Api data field names -->
+    <!-- For popular and top-rated Movies info -->
+    <string name="api_movie_id" translatable="false">id</string>
+    <string name="api_original_title" translatable="false">original_title</string>
+    <string name="api_poster_path" translatable="false">poster_path</string>
+    <string name="api_synopsis" translatable="false">overview</string>
+    <string name="api_user_rating" translatable="false">vote_average</string>
+    <string name="api_release_date" translatable="false">release_date</string>
+    <!-- For reviews -->
+    <string name="api_review_id" translatable="false">id</string>
+    <string name="api_review_author" translatable="false">author</string>
+    <string name="api_review_content" translatable="false">content</string>
+    <string name="api_review_url" translatable="false">url</string>
+    <!-- For videos -->
+    <string name="api_video_name" translatable="false">name</string>
+    <string name="api_video_key" translatable="false">key</string>
+    <!-- For all -->
+    <string name="api_results" translatable="false">results</string>
+
+    <!-- text for url to consult the api -->
+    <string name="videos" translatable="false">videos</string>
+    <string name="reviews" translatable="false">reviews</string>
+
+    <!-- user rating -->
+    <string name="user_rating">%1$s\/10</string>
+
+    <!-- activity_detail.xml ImageView content description-->
+    <string name="activity_detail_imageview_content_description">Movie poster</string>
+
+    <!-- Settings Title  -->
+    <string name="settings_title">SortBy</string>
+
+    <!-- Sort-By Preferences -->
+    <string name="settings_order_by_label">Sort By</string>
+
+    <!-- Label for sort by most recent option  -->
+    <string name="settings_order_by_most_popular_label">Most Popular</string>
+    <string name="settings_order_by_most_popular_value" translatable="false">popular</string>
+
+    <!-- Label for sort by top rated option -->
+    <string name="settings_order_by_top_rated_label">Top Rated</string>
+    <string name="settings_order_by_top_rated_value" translatable="false">top_rated</string>
+
+    <!-- Label for favorites option -->
+    <string name="settings_favorites_label">My Favorites</string>
+    <string name="settings_favorites_value" translatable="false">favorites</string>
+
+    <!-- Strings for videos and reviews -->
+    <string name="videos_label">Related Videos</string>
+    <string name="reviews_label">Reviews</string>
+    <string name="related_content_label">Related Videos and Reviews</string>
+    <!--<string name="no_reviews">There is no reviews for this movie yet</string>-->
+    <string name="play_icon_description">Play icon</string>
+
+    <!-- No Internet  -->
+    <string name="no_internet_connection_available">Sorry, but it seams that there is no Internet connection at the moment. \n\nPlease check your Network connection and try again.</string>
+    <string name="related_content_no_internet_connection_available">Related videos and reviews couldn\'t be loaded since there is no Internet connection at the moment. \n\nPlease check your Network connection and try again.</string>
+
+    <!-- DATABASE strings -->
+    <!-- Error: cannot query unknown uri -->
+    <string name="error_cannot_query_unknown_uri">Cannot query unknown uri: </string>
+    <!-- Insertion not supported for uri -->
+    <string name="insertion_not_supported">Insertion not supported for: </string>
+    <!-- Update not supported for uri -->
+    <string name="update_not_supported">Update not supported for: </string>
+    <!-- Deletion not supported for uri -->
+    <string name="deletion_not_supported">Deletion not supported for: </string>
+    <!-- Log message: Failed to insert row for uri -->
+    <string name="log_failed_to_insert_row">Failed to insert row for: </string>
+    <!-- Validation data -->
+    <!-- Validation data, title not null -->
+    <string name="validation_id_null">Id movie required!</string>
+    <!-- Validation data, title not null -->
+    <string name="validation_title_null">Title movie required!</string>
+    <!-- Validation data, cover not null -->
+    <string name="validation_cover_null">Movie must have a cover!</string>
+    <!-- Validation data, type not null and valid value -->
+    <string name="validation_date_null">Movie must have a release date!</string>
+    <!-- Validation data, quantity not negative -->
+    <string name="validation_rating_null">Movie must have a rating value!</string>
+    <!-- Validation data, price not negative -->
+    <string name="validation_synopsis_null">Movie must have a synopsis!</string>
+    <!-- Info on DB operations -->
+    <!-- Movie was successfully deleted -->
+    <!--<string name="message_movie_deleted">Movie has been removed from favorites!</string>-->
+    <!--&lt;!&ndash; Movie has failed to be deleted &ndash;&gt;-->
+    <!--<string name="message_error_movie_deleted">Unable to remove movie from favorites!</string>-->
+    <!--&lt;!&ndash; Current movie was successfully saved &ndash;&gt;-->
+    <!--<string name="message_movie_saved">Movie has been added to favorites!</string>-->
+    <!--&lt;!&ndash; Current movie has failed to be saved &ndash;&gt;-->
+    <!--<string name="message_error_movie_saved">Error adding movie to favorites!</string>-->
+    <!-- No favorites stored in DB -->
+    <string name="no_favorites">You hasn\'t added any movie to favorites yet!</string>
+    <!-- Unknown uri X with match Y-->
+    <!-- Unknown uri -->
+    <string name="unknown_uri">Unknown Uri </string>
+    <!-- with match -->
+    <string name="with_match"> with match </string>
+</resources>

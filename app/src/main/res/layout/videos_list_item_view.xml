@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/included_list_item_view"
+    style="@style/VideosMainLinearLayout">
+
+    <LinearLayout
+        style="@style/VideosHorLinearLayout">
+
+    <ImageView
+        android:id="@+id/video_play_icon"
+        style="@style/PlayIcon"
+        android:contentDescription="@string/play_icon_description"
+        android:src="@drawable/ic_play_arrow_black_24dp" />
+
+    <TextView
+        android:id="@+id/video_title_tv"
+        style="@style/VideoTitle"/>
+
+    </LinearLayout>
+</LinearLayout>

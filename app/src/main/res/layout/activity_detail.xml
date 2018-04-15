@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        style="@style/MatchMatch">
+
+    <LinearLayout
+        style="@style/MainLinearLayout"
+        tools:context="com.example.android.popularmovies1.DetailActivity">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TitleTV" />
+
+
+        <LinearLayout
+            style="@style/HorLinearLayout">
+
+                <ImageView
+                    android:id="@+id/poster"
+                    style="@style/PosterImageView"
+                    android:contentDescription="@string/activity_detail_imageview_content_description"
+                    app:srcCompat="@android:drawable/alert_dark_frame" />
+
+            <LinearLayout
+                style="@style/DateRatingLinearLayout" >
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/DateTV" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    style="@style/RatingTV" />
+
+                <ToggleButton
+                    android:id="@+id/favorite_toggle"
+                    style="@style/Toggle" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/synopsis"
+            style="@style/SynopsisTV" />
+
+        <View
+            style="@style/View" />
+
+        <TextView
+            android:id="@+id/videos_label"
+            android:text="@string/videos_label"
+            style="@style/VideosReviewsLabels" />
+
+        <TextView
+            android:id="@+id/videos_error_message"
+            style="@style/SynopsisTV" />
+
+        <ListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/videos_lv"
+            style="@style/MatchWrap">
+        </ListView>
+
+        <View
+            style="@style/View" />
+
+        <TextView
+            android:id="@+id/reviews_label"
+            android:text="@string/reviews_label"
+            style="@style/VideosReviewsLabels" />
+
+        <ListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/reviews_lv"
+            style="@style/ReviewsListView">
+        </ListView>
+
+    </LinearLayout>
+    </ScrollView>
+</layout>

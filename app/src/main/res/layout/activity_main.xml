@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MainLinearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid_view"
+        style="@style/GridView" />
+    <TextView
+        android:id="@+id/no_internet_tv"
+        style="@style/NoInternetTV" />
+</LinearLayout>

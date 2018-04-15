@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When not selected, use grey -->
+    <item android:state_checked="false"
+        android:drawable="@drawable/ic_star_grey_24dp" />
+    <!-- When selected, use yellow -->
+    <item android:state_checked="true"
+        android:drawable="@drawable/ic_star_yellow_24dp" />
+</selector>

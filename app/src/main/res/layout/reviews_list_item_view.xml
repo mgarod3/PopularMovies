@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch">
+
+    <TextView
+        android:id="@+id/review_author_tv"
+        style="@style/ReviewAuthor" />
+
+    <TextView
+        android:id="@+id/review_content_tv"
+        style="@style/ReviewContent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/review_author_tv"
+        app:layout_constraintTop_toBottomOf="@+id/review_author_tv" />
+
+    <View
+        style="@style/ViewReviews"
+        app:layout_constraintTop_toBottomOf="@id/review_content_tv"/>
+</android.support.constraint.ConstraintLayout>
